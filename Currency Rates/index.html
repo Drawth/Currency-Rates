@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döviz Çevirici</title>
+    <link rel="stylesheet" href="style.css">
+    <title> Döviz Kuru Çevirici</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        
+        <div id="main">
+            <div class="header-wrapper">
+                <h1>Döviz Kuru Çevirici</h1>
+                <hr>
+            </div>
+            <div class="content-wrapper">
+                <form>
+                    
+                    <input type="number" id="amount" name="amount" placeholder="Miktar ">
+                    <select id="from_currency" name="from_currency">
+                        <option value="TRY">Türk Lirası</option>
+                        <option value="USD">ABD Doları</option>
+                        <option value="EUR">Euro</option>
+                        <option value="GBP">İngiliz Sterlini</option>
+                        <option value="JPY">Japon Yeni</option>
+                    </select>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <select id="to_currency" name="to_currency">
+                        <option value="TRY">Türk Lirası</option>
+                        <option value="USD">ABD Doları</option>
+                        <option value="EUR">Euro</option>
+                        <option value="GBP">İngiliz Sterlini</option>
+                        <option value="JPY">Japon Yeni</option>
+                    </select>
+                    <input readonly id="result" value="Sonuç">
+                </form>
+            </div>
+            
+        </div>    
+    </div>
+    <script src="currency.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
